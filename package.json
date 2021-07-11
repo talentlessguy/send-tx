@@ -1,0 +1,45 @@
+{
+  "name": "send-tx",
+  "version": "0.0.0",
+  "description": "Sign & send Ethereum transactions with ease.",
+  "type": "module",
+  "exports": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "rollup -c"
+  },
+  "files": [
+    "dist"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/talentlessguy/sign-tx.git"
+  },
+  "keywords": [
+    "eth",
+    "ethereum",
+    "blockchain",
+    "ethers",
+    "sign-tx",
+    "tx"
+  ],
+  "author": "v1rtl",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/talentlessguy/sign-tx/issues"
+  },
+  "homepage": "https://github.com/talentlessguy/sign-tx#readme",
+  "devDependencies": {
+    "@rollup/plugin-typescript": "^8.2.1",
+    "ethers": "^5.4.1",
+    "rollup": "^2.53.1",
+    "tslib": "^2.3.0",
+    "typescript": "^4.3.5"
+  },
+  "peerDependencies": {
+    "ethers": "^5.4.1"
+  },
+  "dependencies": {
+    "@ethereumjs/tx": "^3.3.0"
+  }
+}
