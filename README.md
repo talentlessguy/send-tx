@@ -1,6 +1,10 @@
+<div align="center">
+
 # send-tx
 
 [![NPM][npm-badge]][npm-url] [![NPM][dl-badge]][npm-url]
+  
+</div>
 
 Sign & send Ethereum transactions with ease.
 
