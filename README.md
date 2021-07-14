@@ -1,5 +1,7 @@
 # send-tx
 
+[![NPM][npm-badge]][npm-url] [![NPM][dl-badge]][npm-url]
+
 Sign & send Ethereum transactions with ease.
 
 ## Install
@@ -54,3 +56,7 @@ const receipt = await signTx({
   data: data
 })
 ```
+
+[npm-badge]: https://img.shields.io/npm/v/send-tx?style=for-the-badge&color=4E8EE9&label=&logo=npm
+[npm-url]: https://npmjs.com/package/send-tx/swagger
+[dl-badge]: https://img.shields.io/npm/dt/send-tx?style=for-the-badge&color=4E8EE9
