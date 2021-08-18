@@ -14,7 +14,7 @@ Sign & send Ethereum transactions with ease.
 pnpm i sign-tx ethers
 ```
 
-## Example
+## Examples
 
 ### Send ETH
 
