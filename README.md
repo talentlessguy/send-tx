@@ -6,7 +6,7 @@
   
 </div>
 
-Sign & send Ethereum transactions with ease.
+Sign & send Ethereum transactions.
 
 ## Install
 
