@@ -1,5 +1,5 @@
 import { Transaction as Tx, TxData } from '@ethereumjs/tx'
-import { ethers, providers, utils } from 'ethers'
+import { hexlify } from '@ethersproject/bytes'
 
 /**
  * Initialize a `sendTx` function with an ethers.js provider
@@ -23,21 +23,21 @@ import { ethers, providers, utils } from 'ethers'
   })
 ```
  */
-export const initSignTx = (provider: providers.BaseProvider) => {
+export const initSignTx = (provider: any) => {
   /**
    * @returns transaction receipt
    */
   return async function sendTx({
     from,
     fromPrivateKey,
-    gasLimit = utils.hexlify(21000),
+    gasLimit = hexlify(21000),
     ...opts
   }: TxData & { from: string; fromPrivateKey: string; gasLimit: string }) {
     const txCount = await provider.getTransactionCount(from)
 
     // build the transaction
     const tx = new Tx({
-      nonce: ethers.utils.hexlify(txCount),
+      nonce: hexlify(txCount),
       gasLimit,
       ...opts
     })
